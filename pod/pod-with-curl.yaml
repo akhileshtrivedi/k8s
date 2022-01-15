@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: browser
+spec:
+  containers:
+  - name: curl
+    image: akhileshaca/curl
+    imagePullPolicy: IfNotPresent
+    command: ['sh', '-c', 'echo Curl-Pod running ; sleep 3600']
